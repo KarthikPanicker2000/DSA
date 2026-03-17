@@ -18,9 +18,9 @@ int main(){
 	
     int n;
     cin>>n;
-    vector<int> arr(n);
+    vector<int> v(n);
     for( int i=0;i<n;i++){
-        cin>>arr[i];
+        cin>>v[i];
     }
 
     //Brute -> Copy the array into a new array
@@ -43,9 +43,9 @@ int main(){
     // }
     
     //Optimal -> 2 pointer
-    moveZeroes(arr);
+    moveZeroes(v);
 
     for( int i=0;i<n;i++){
-        cout<<arr[i]<< " ";
+        cout<<v[i]<< " ";
     }
 }
